@@ -1,0 +1,45 @@
+# SMS Spam Detection Project
+
+## Overview
+This project focuses on building a machine learning model for detecting spam messages in SMS. It includes data loading, exploratory data analysis (EDA), text pre-processing, vectorization, and the implementation of both a Multinomial Naive Bayes and an XGBoost model.
+
+## Project Structure
+
+### 1. Data
+- The dataset (`spam.csv`) contains SMS messages labeled as 'spam' or 'ham' (non-spam).
+- Data is cleaned, and exploratory data analysis is performed to understand the dataset distribution.
+
+### 2. Text Pre-processing
+- Messages undergo cleaning, stopword removal, and stemming to prepare them for analysis.
+
+### 3. Token Visualization
+- Word clouds are created to visualize the most frequent words in both spam and ham messages.
+
+### 4. Vectorization
+- Text data is converted into numerical form using CountVectorizer and TF-IDF transformation.
+
+### 5. Word Embeddings using GloVe
+- Pre-trained GloVe embeddings are used to represent words numerically.
+
+### 6. Model Building
+- A pipeline is implemented for Multinomial Naive Bayes, and its performance is evaluated.
+- An XGBoost model is implemented, and its accuracy is assessed.
+
+### 7. Saving Predicted Values
+- Predicted values are saved to an Excel file (`predicted_values.xlsx`).
+
+## Usage
+1. Clone the repository.
+2. Install the required libraries using `pip install -r requirements.txt`.
+3. Run the Jupyter Notebook or Python script.
+
+## Dependencies
+- Python 3.x
+- Jupyter Notebook
+- Libraries: pandas, numpy, scikit-learn, nltk, keras, xgboost, etc.
+
+## Author
+[Your Name]
+
+## License
+This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
